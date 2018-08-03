@@ -29,7 +29,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 :root {
 
-  --gruvbox-dark-gray : #928374;
   --gruvbox-dark0 : #282828;
   --gruvbox-dark0_hard : #1d2021;
   --gruvbox-dark0_soft : #32302f;
@@ -48,27 +47,28 @@ all of MD as it is not optimized for dense, information rich UIs.
   --gruvbox-bg : var(--gruvbox-dark0);
   --gruvbox-fg : var(--gruvbox-light0_soft);
 
-  --gruvbox-dark-red : #cc241d;
-  --gruvbox-dark-light-red : #fb4934;
-  --gruvbox-dark-faded-red : #9d0006;
-  --gruvbox-dark-green : #98971a;
-  --gruvbox-dark-light-green : #b8bb26;
-  --gruvbox-dark-faded-green : #79740e;
-  --gruvbox-dark-yellow : #d79921;
-  --gruvbox-dark-light-yellow : #fabd2f;
-  --gruvbox-dark-faded-yellow : #b57614;
-  --gruvbox-dark-blue : #458588;
-  --gruvbox-dark-light-blue : #83a598;
-  --gruvbox-dark-faded-blue : #076678;
-  --gruvbox-dark-purple : #b16286;
-  --gruvbox-dark-light-purple : #d3869b;
-  --gruvbox-dark-faded-purple : #8f3f71;
-  --gruvbox-dark-aqua : #689d6a;
-  --gruvbox-dark-light-aqua : #8ec07c;
-  --gruvbox-dark-faded-aqua : #427b58;
-  --gruvbox-dark-orange : #d65d0e;
-  --gruvbox-dark-light-orange : #fe8019;
-  --gruvbox-dark-faded-orange : #af3a03;
+  --gruvbox-gray : #928374;
+  --gruvbox-red : #cc241d;
+  --gruvbox-light-red : #fb4934;
+  --gruvbox-faded-red : #9d0006;
+  --gruvbox-green : #98971a;
+  --gruvbox-light-green : #b8bb26;
+  --gruvbox-faded-green : #79740e;
+  --gruvbox-yellow : #d79921;
+  --gruvbox-light-yellow : #fabd2f;
+  --gruvbox-faded-yellow : #b57614;
+  --gruvbox-blue : #458588;
+  --gruvbox-light-blue : #83a598;
+  --gruvbox-faded-blue : #076678;
+  --gruvbox-purple : #b16286;
+  --gruvbox-light-purple : #d3869b;
+  --gruvbox-faded-purple : #8f3f71;
+  --gruvbox-aqua : #689d6a;
+  --gruvbox-light-aqua : #8ec07c;
+  --gruvbox-faded-aqua : #427b58;
+  --gruvbox-orange : #d65d0e;
+  --gruvbox-light-orange : #fe8019;
+  --gruvbox-faded-orange : #af3a03;
 
   /* Elevation
    *
@@ -134,10 +134,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--gruvbox-dark-gray);
-  --jp-border-color1: var(--gruvbox-dark-gray);
-  --jp-border-color2: var(--gruvbox-dark-gray);
-  --jp-border-color3: var(--gruvbox-dark-gray);
+  --jp-border-color0: var(--gruvbox-gray);
+  --jp-border-color1: var(--gruvbox-gray);
+  --jp-border-color2: var(--gruvbox-gray);
+  --jp-border-color3: var(--gruvbox-gray);
   --jp-border-radius: 1px;
 
   /* UI Fonts
@@ -247,7 +247,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Brand/accent */
 
   --jp-brand-color0: var(--md-blue-700);
-  --jp-brand-color1: var(--gruvbox-dark-blue);  /* selected cell colour, bar to left of cell, selected file in browser */
+  --jp-brand-color1: var(--gruvbox-blue);  /* selected cell colour, bar to left of cell, selected file in browser */
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
 
@@ -287,7 +287,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
 
   --jp-cell-editor-background: var(--gruvbox-bg);  /* background colour of all cells */
-  --jp-cell-editor-border-color: var(--gruvbox-dark-gray);
+  --jp-cell-editor-border-color: var(--gruvbox-dark3);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
   --jp-cell-editor-active-background: var(--jp-layout-color0);  /* background colour of current cell */
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);  /* border colour of current cell */
@@ -299,7 +299,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-not-active-opacity: 1.0;
   --jp-cell-prompt-not-active-font-color: var(--gruvbox-fg);
   --jp-cell-inprompt-font-color: var(--jp-brand-color1);
-  --jp-cell-outprompt-font-color: var(--gruvbox-dark-red);
+  --jp-cell-outprompt-font-color: var(--gruvbox-red);
 
   /* Notebook specific styles */
 
@@ -333,7 +333,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--gruvbox-dark-blue);
+  --jp-input-box-shadow: inset 0 0 2px var(--gruvbox-blue);
   --jp-input-active-background: var(--jp-layout-color0);
   --jp-input-hover-background: var(--jp-layout-color2);
   --jp-input-background: var(--md-grey-800);
@@ -344,33 +344,33 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-editor-selected-background: var(--gruvbox-dark1);  /* ?? */
   --jp-editor-selected-focused-background: var(--gruvbox-dark1);  /* ?? */
-  --jp-editor-cursor-color: var(--gruvbox-dark-blue);
+  --jp-editor-cursor-color: var(--gruvbox-blue);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: var(--gruvbox-dark-orange);
+  --jp-mirror-editor-keyword-color: var(--gruvbox-orange);
   --jp-mirror-editor-atom-color: var(--md-blue-300);
-  --jp-mirror-editor-number-color: var(--gruvbox-dark-yellow);
-  --jp-mirror-editor-def-color: var(--gruvbox-dark-blue);
+  --jp-mirror-editor-number-color: var(--gruvbox-yellow);
+  --jp-mirror-editor-def-color: var(--gruvbox-blue);
   --jp-mirror-editor-variable-color: var(--gruvbox-fg);
-  --jp-mirror-editor-variable-2-color: var(--gruvbox-dark-light-purple); /* self */
-  --jp-mirror-editor-variable-3-color: var(--gruvbox-dark-green); /* ?? */
+  --jp-mirror-editor-variable-2-color: var(--gruvbox-light-purple); /* self */
+  --jp-mirror-editor-variable-3-color: var(--gruvbox-green); /* ?? */
   --jp-mirror-editor-punctuation-color: var(--gruvbox-fg); /* ?? */
-  --jp-mirror-editor-property-color: var(--gruvbox-dark-light-blue);
-  --jp-mirror-editor-operator-color: var(--gruvbox-dark-purple);
-  --jp-mirror-editor-comment-color: var(--gruvbox-dark-gray);
-  --jp-mirror-editor-string-color: var(--gruvbox-dark-green);
+  --jp-mirror-editor-property-color: var(--gruvbox-light-blue);
+  --jp-mirror-editor-operator-color: var(--gruvbox-purple);
+  --jp-mirror-editor-comment-color: var(--gruvbox-gray);
+  --jp-mirror-editor-string-color: var(--gruvbox-green);
   --jp-mirror-editor-string-2-color: #f50;
   --jp-mirror-editor-meta-color: #AA22FF;
   --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: var(--gruvbox-dark-aqua);
+  --jp-mirror-editor-builtin-color: var(--gruvbox-aqua);
   --jp-mirror-editor-bracket-color: var(--gruvbox-fg);
   --jp-mirror-editor-tag-color: var(--md-green-700);
-  --jp-mirror-editor-attribute-color: var(--gruvbox-dark-red);
-  --jp-mirror-editor-header-color: var(--gruvbox-dark-blue);
+  --jp-mirror-editor-attribute-color: var(--gruvbox-red);
+  --jp-mirror-editor-header-color: var(--gruvbox-blue);
   --jp-mirror-editor-quote-color: var(--md-green-300);
-  --jp-mirror-editor-link-color: var(--gruvbox-dark-red);
-  --jp-mirror-editor-error-color: var(--gruvbox-dark-red);
+  --jp-mirror-editor-link-color: var(--gruvbox-red);
+  --jp-mirror-editor-error-color: var(--gruvbox-red);
   --jp-mirror-editor-hr-color: #FFFFFF;
 
   /*--jp-layout-color0: #fcfcfd;
@@ -412,6 +412,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* ?? */
   /*--jp-SideBar-background: var(--gruvbox-bg);*/
   --jp-main-dock-panel-background: var(--gruvbox-bg);
+
 }
 
 /* Change the colour of linenumbers */
@@ -419,7 +420,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   padding: 0 3px 0 5px;
   min-width: 20px;
   text-align: right;
-  color: var(--gruvbox-dark-gray);
+  color: var(--gruvbox-gray);
   white-space: nowrap;
 }
 
@@ -445,7 +446,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 /* Makes the running icon a tiny bit bigger */
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
-    color: var(--gruvbox-dark-green);
+    color: var(--gruvbox-green);
     content: "\25CF";
     font-size: 12px;
     position: relative;
@@ -456,8 +457,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 }
 
 /* Do some nice things with brackets */
-div.CodeMirror span.CodeMirror-matchingbracket {color: var(--gruvbox-fg);  border-bottom: 1px solid var(--gruvbox-dark-blue); line-height: 1;}
-div.CodeMirror span.CodeMirror-nonmatchingbracket {color: var(--gruvbox-fg);  border-bottom: 1px solid var(--gruvbox-dark-red); line-height: 0.55;}
+div.CodeMirror span.CodeMirror-matchingbracket {color: var(--gruvbox-fg);  border-bottom: 1px solid var(--gruvbox-blue); line-height: 1;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: var(--gruvbox-fg);  border-bottom: 1px solid var(--gruvbox-red); line-height: 0.55;}
 .CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
 .CodeMirror-activeline-background {background: #e8f2ff;}
 
@@ -492,18 +493,18 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: var(--gruvbox-fg);  bo
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--gruvbox-dark-gray);
+    background: var(--gruvbox-gray);
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--gruvbox-dark-gray);
+    background: var(--gruvbox-gray);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb:active {
-    background: var(--gruvbox-dark-blue);
+    background: var(--gruvbox-blue);
 }
 
 /* Custom line rule */

@@ -134,10 +134,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--gruvbox-gray);
-  --jp-border-color1: var(--gruvbox-gray);
-  --jp-border-color2: var(--gruvbox-gray);
-  --jp-border-color3: var(--gruvbox-gray);
+  --jp-border-color0: var(--gruvbox-dark4);
+  --jp-border-color1: var(--gruvbox-dark4);
+  --jp-border-color2: var(--gruvbox-dark4);
+  --jp-border-color3: var(--gruvbox-dark4);
   --jp-border-radius: 1px;
 
   /* UI Fonts

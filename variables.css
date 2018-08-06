@@ -433,6 +433,27 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: var(--gruvbox-fg);  bo
 .CodeMirror-selected { background: var(--gruvbox-dark2); }
 .CodeMirror-focused .CodeMirror-selected { background: var(--gruvbox-dark2); }  /* selected text highlight */
 
+/* Custom markdown line rule */
+.jp-RenderedHTMLCommon hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+    border-style: inset;
+    border-width: 1px;
+    border-top: 1px solid var(--gruvbox-light4);
+    border-bottom: 1px solid var(--gruvbox-light4);
+}
+
+/* Centered markdown output */
+.jp-MarkdownOutput {
+    flex: 1 1 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: var(--jp-code-padding);
+    padding-right: var(--jp-code-padding);
+}
 
 
 /* could be deleted, don't know what it is used for */
@@ -473,25 +494,4 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: var(--gruvbox-fg);  bo
 /* Handle */
 ::-webkit-scrollbar-thumb:active {
     background: var(--gruvbox-blue);
-}
-
-/* Custom line rule */
-.jp-RenderedHTMLCommon hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 0em;
-    margin-right: 0em;
-    border-style: inset;
-    border-width: 1px;
-    border-top: 1px solid var(--gruvbox-fg);
-    border-bottom: 1px solid var(--gruvbox-fg);
-}
-
-.jp-MarkdownOutput {
-    flex: 1 1 auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: var(--jp-code-padding);
-    padding-right: var(--jp-code-padding);
 }

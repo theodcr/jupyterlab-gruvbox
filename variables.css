@@ -454,3 +454,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: var(--gruvbox-fg);  bo
     padding-left: var(--jp-code-padding);
     padding-right: var(--jp-code-padding);
 }
+
+/* Weight of operators and keywords in code */
+.cm-s-jupyter span.cm-operator {
+    font-weight: normal;
+}
+.cm-s-jupyter span.cm-keyword {
+    font-weight: normal;
+}

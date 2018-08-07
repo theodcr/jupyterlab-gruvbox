@@ -349,7 +349,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Code mirror specific styles */
 
   --jp-mirror-editor-keyword-color: var(--gruvbox-orange);
-  --jp-mirror-editor-atom-color: var(--md-blue-300);
+  --jp-mirror-editor-atom-color: var(--gruvbox-blue); /* ?? */
   --jp-mirror-editor-number-color: var(--gruvbox-yellow);
   --jp-mirror-editor-def-color: var(--gruvbox-blue);
   --jp-mirror-editor-variable-color: var(--gruvbox-fg);

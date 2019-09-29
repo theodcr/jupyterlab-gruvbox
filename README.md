@@ -1,8 +1,31 @@
-# jupyterlab-gruvbox
-Gruvbox theme and colorscheme for JupyterLab and Matplotlib.
+# @theodcr/jupyterlab-gruvbox
 
-It consists of:
-- a single CSS `variables.css` that can be loaded with the Stylus browser extension for example
-- a Matplotlib theme `gruvbox.mplstyle` that can be copied to `~/.config/matplotlib/stylelib/` and then loaded with Matplotlib
+Gruvbox theme for JupyterLab
 
-Spacing and arrangement inspired from [Atom Dark Theme for JupyterLab](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme). I also customized the fonts, feel free to change the theme however you want.
+Made with [JupyterLab theme cookiecutter](https://github.com/jupyterlab/theme-cookiecutter). Spacing and arrangement inspired from [Atom Dark Theme for JupyterLab](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme).
+
+## Prerequisites
+
+* JupyterLab >=1.0
+
+## Installation
+
+```bash
+jupyter labextension install @theodcr/jupyterlab-gruvbox
+```
+
+## Development
+
+For a development install (requires npm version 4 or later), do the following in the repository directory:
+
+```bash
+npm install
+jupyter labextension link .
+```
+
+To rebuild the package and the JupyterLab app:
+
+```bash
+npm run build
+jupyter lab build
+```

@@ -15,7 +15,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     const style = '@theodcr/jupyterlab-gruvbox/index.css';
 
     manager.register({
-      name: 'jupyterlab-gruvbox',
+      name: 'JupyterLab Gruvbox',
       isLight: false,
       themeScrollbars: true,
       load: () => manager.loadCSS(style),

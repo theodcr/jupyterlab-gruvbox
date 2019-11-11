@@ -1,7 +1,4 @@
 /*-----------------------------------------------------------------------------
-| Gruvbox retro groove colorscheme for JupyterLab
-| https://github.com/morhetz/gruvbox
-|
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
@@ -361,7 +358,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-comment-color: var(--gruvbox-gray);
   --jp-mirror-editor-string-color: var(--gruvbox-green);
   --jp-mirror-editor-string-2-color: #f50;
-  --jp-mirror-editor-meta-color: #AA22FF;
+  --jp-mirror-editor-meta-color: var(--gruvbox-light-purple); /* @decorators */
   --jp-mirror-editor-qualifier-color: #555;
   --jp-mirror-editor-builtin-color: var(--gruvbox-aqua);
   --jp-mirror-editor-bracket-color: var(--gruvbox-fg);
@@ -386,82 +383,26 @@ all of MD as it is not optimized for dense, information rich UIs.
   /*--jp-SideBar-background: var(--gruvbox-bg);*/
   --jp-main-dock-panel-background: var(--gruvbox-bg);
 
-}
+  /* Gruvbox custom ends here ----------------------------------- */
 
-/* Change the colour of linenumbers */
-.CodeMirror-linenumber {
-  padding: 0 3px 0 5px;
-  min-width: 20px;
-  text-align: right;
-  color: var(--gruvbox-gray);
-  white-space: nowrap;
-}
+  /* Sidebar-related styles */
 
-/* This is the region where the linenumbers are */
-.CodeMirror-gutters {
-  border-right: 1px solid var(--gruvbox-dark1);
-  background-color: var(--gruvbox-bg);
-  white-space: nowrap;
-}
+  --jp-sidebar-min-width: 180px;
 
-/* ?? */
-.jp-Completer-item.jp-mod-active{
-    color: var(--gruvbox-fg);
-    background: var(--gruvbox-dark1);
-}
+  /* Search-related styles */
 
+  --jp-search-toggle-off-opacity: 0.5;
+  --jp-search-toggle-hover-opacity: 0.75;
+  --jp-search-toggle-on-opacity: 1;
 
-/* Item selected in menu for files and what not */
-/*.jp-DirListing-item.jp-mod-selected {
-    color: white;
-    background: var(--gruvbox-dark1);
-}*/
+  /* scrollbar related styles. Supports every browser except Edge.
+   * On Firefox, only the color settings are respected.
+   */
 
-/* Makes the running icon a tiny bit bigger */
-.jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
-    color: var(--gruvbox-green);
-    content: "\25CF";
-    font-size: 12px;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: -2px;
-    left: -8px;
-}
+  --jp-scrollbar-background-color: #3f4244;
+  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
 
-/* Do some nice things with brackets */
-div.CodeMirror span.CodeMirror-matchingbracket {color: var(--gruvbox-fg);  border-bottom: 1px solid var(--gruvbox-blue); line-height: 1;}
-div.CodeMirror span.CodeMirror-nonmatchingbracket {color: var(--gruvbox-fg);  border-bottom: 1px solid var(--gruvbox-red); line-height: 0.55;}
-.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
-.CodeMirror-activeline-background {background: #e8f2ff;}
-
-.CodeMirror-selected { background: var(--gruvbox-dark2); }
-.CodeMirror-focused .CodeMirror-selected { background: var(--gruvbox-dark2); }  /* selected text highlight */
-
-/* Custom markdown line rule */
-.jp-RenderedHTMLCommon hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 0em;
-    margin-right: 0em;
-    border-style: inset;
-    border-width: 1px;
-    border-top: 1px solid var(--gruvbox-light4);
-    border-bottom: 1px solid var(--gruvbox-light4);
-}
-
-/* Centered markdown output */
-.jp-MarkdownOutput {
-    flex: 1 1 auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: var(--jp-code-padding);
-}
-
-.cm-s-jupyter span.cm-operator {
-    font-weight: normal;
-}
-.cm-s-jupyter span.cm-keyword {
-    font-weight: normal;
+  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 }
